@@ -35,14 +35,13 @@ public:
     double operator&(const Vector2& vector) const;
     bool operator==(const Vector2& vector) const;
     bool operator!=(const Vector2& vector) const;
+
+
     //double operator|(const Vector2& vector) const;
     //double operator<<(const Vector2& vector) const;
 
-
-
     //Vector2 operator*(const double & a) const;
     //Vector2 operator/(const double & l);
-
 
     //Vector2 operator2(const Vector2& vector) const;
 

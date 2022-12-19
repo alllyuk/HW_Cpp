@@ -30,27 +30,25 @@ double Vector2::getPhi(){
     return std::atan2(y, x);
 }
 double Vector2::getA() {
-    return std::atan2(y, x)*180/3.1415;  // угол в градусах
+    return std::atan2(y, x)*180/3.1415;  // вычисление угла в градусах
 }
 
 Vector2 Vector2::operator+(const Vector2& vector) const{
     return Vector2(x + vector.x, y + vector.y);
 }
-Vector2 Vector2::operator-(const Vector2& vector) const{  // вычетание векторов
+Vector2 Vector2::operator-(const Vector2& vector) const{  // вычитание
     return Vector2(x - vector.x, y - vector.y);
 }
-Vector2 Vector2::operator*(const double & b) const{   //умножение на число
+Vector2 Vector2::operator*(const double & b) const{   // умножение на число
     return Vector2(x * b, y * b);
 }
-Vector2 Vector2::operator/(const double& l) const {   //деление на число
+Vector2 Vector2::operator/(const double& l) const {   // деление на число
     return Vector2(x / l, y / l);
 }
-double Vector2::operator*(const Vector2& vector) const{ //скалярное умножение
+double Vector2::operator*(const Vector2& vector) const{ // скалярное умножение
     return (x * vector.x + y * vector.y);
 }
-//double Vector2::operator*(const Vector2& vector) const{ // псевдоскалярное умножение
-//return (x * vector.x - y * vector.y);
-//}
+
 double Vector2::operator&(const Vector2& vector) const{ //
     return (sqrt(x*x + y*y))*sqrt(vector.x*vector.x + vector.y+vector.y)*((y+vector.y)/(x+vector.x)); //угловое расстояние между векторами
 }

@@ -2,7 +2,7 @@
 #include "Vector2.h"
 
 int main (){
-    Vector2 a(1.0, 2.0);
+    Vector2 a(5.0, 2.0);
     Vector2 b(2.0, 3.0);
 
     std::cout << a.getR() << std::endl;
